@@ -1,0 +1,59 @@
+.list-key {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+   }
+
+.list-key__item {
+  width: 73px;
+  margin-right: 8px; 
+
+  &:last-child {
+      margin-right: 0;
+    }
+}   
+
+.list-key__sayt {
+  width: 128px;
+}
+
+ .list-key__annexes {
+  width: 145px;
+}
+
+.list-key__design {
+  width: 103px;
+}
+
+.list-key__marketing {
+  width: 130px;
+}
+
+.list-key__button {
+  color: $title-text-color;
+  background-color: $button-color;
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms, 250ms, 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+
+     &--focus {
+      color: $white-color;
+      background-color: $accent-color;
+    }
+    
+     &:hover,
+     &:focus{
+       color: $white-color;
+       background-color: $accent-color;
+       box-shadow: 0px 3px 1px $box-shadow-four, 0px 1px 2px $box-shadow-five, 0px 2px 2px $box-shadow-one;
+    }
+}

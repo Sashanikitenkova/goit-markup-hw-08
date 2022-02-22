@@ -1,0 +1,52 @@
+.client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .partners {
+   display: flex;
+  }
+  
+  .partners__item {
+   width: 170px;
+   height: 92px;
+  
+   margin-right: 30px; 
+
+   &:last-child {
+    margin-right: 0;
+   }
+  }
+  
+  .partners__link {
+   display: flex;
+   width: 170px;
+   height: 92px;
+   border: 1px solid $icon-fill;
+   border-radius: 4px;
+  
+   justify-content: center;
+   align-items: center;
+  
+   transition-property: border;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+   border: 1px solid $accent-color;
+   }
+  }
+  
+  .partners__icon {
+   fill: $icon-fill;
+  
+   transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   .partners__link:hover &, 
+   .partners__link:focus & {
+      fill: $accent-color;
+    }
+  }

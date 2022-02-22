@@ -1,0 +1,37 @@
+.social-contact {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .social-contact__item + .social-contact__item {
+    margin-left: 50px;
+  }
+
+  .social-contact__link {
+    color: $primary-text-color;
+    fill: $primary-text-color;
+    display: flex;
+    font-style: normal;
+    align-items: center;
+    Font-size: 14px;
+    Line-height: 1.7;
+    font-weight: 500;
+    Letter-spacing: 0.03em;
+    text-decoration: none;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+    transition-property: color, fill;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+     }
+  }
+
+  .social-contact__icon {
+    margin-right: 10px;
+  }

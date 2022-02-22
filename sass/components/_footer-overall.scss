@@ -1,0 +1,52 @@
+.basement {
+    background-color: $background-color;
+
+    padding-bottom: 60px;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+   .address-nav {
+    margin-right: 70px;
+  } 
+
+  .address-nav__coordinates {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $white-color;
+
+    margin-bottom: 9px;
+    margin-top: 0;
+   }
+
+   .contact-footer__link {
+    color: $contact-color;
+    font-style: normal;
+    Font-size: 14px;
+    Line-height: 1.7;
+    font-weight: 400;
+    Letter-spacing: 0.03em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    }
+  }
+
+ .contact-footer__item {
+  margin-bottom: 9px;
+ }
