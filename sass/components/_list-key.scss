@@ -1,35 +1,60 @@
 .list-key {
-    display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767.9px) {
+    margin-bottom: 40px;
+  }
+   
+  @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
-   }
+  }
+}
 
 .list-key__item {
-  width: 73px;
-  margin-right: 8px; 
 
-  &:last-child {
-      margin-right: 0;
-    }
+  @media screen and (max-width: 767.9px) {
+    margin-bottom: 15px;
+  }
 }   
 
-.list-key__sayt {
-  width: 128px;
-}
+.list-key__item:not(:last-child) {
+    margin-right: 8px;
+  }
 
- .list-key__annexes {
-  width: 145px;
-}
 
-.list-key__design {
-  width: 103px;
-}
 
-.list-key__marketing {
-  width: 130px;
-}
+// .list-key__sayt {
+//   width: 128px;
+// }
+
+//  .list-key__annexes {
+//   width: 145px;
+// }
+
+// .list-key__design {
+//   width: 103px;
+// }
+
+// .list-key__marketing {
+//   width: 130px;
+// }
 
 .list-key__button {
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+
   color: $title-text-color;
   background-color: $button-color;
   border-radius: 4px;
@@ -38,7 +63,6 @@
   font-size: 16px;
   line-height: 1.63;
   border: 0;
-  cursor: pointer;
   font-family: inherit;
 
   transition-property: color, background-color, box-shadow;

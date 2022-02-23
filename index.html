@@ -10,21 +10,19 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!-- <header>
-      <div class="container container--main-nav">
-        <nav class="nav">
-          <a href="./index.html" class="logo" lang="en">
-            <span class="logo__text">Web</span>Studio
-          </a>
-
-           <ul class="site-nav">
-            <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="">Студия</a></li>
-            <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
-            <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
-           </ul>
-        </nav>
-
-        <ul class="social-contact">
+    <header class="header">
+      <div class="container--main-nav contain">
+        <a href="./index.html" class="logo--header logo" lang="en">Web<span class="logo__text">Studio</span></a>
+        <div class="header-nav" id="menu-container" data-menu>
+          <nav class="nav">
+            <ul class="site-nav">
+             <li class="site-nav__item"><a class="site-nav__link current" href="">Студия</a></li>
+             <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
+             <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
+            </ul>
+         </nav>
+         <div>
+            <ul class="social-contact">
             <li class="social-contact__item"><a class="social-contact__link" href="">
               <svg class="social-contact__icon" width="16px" height="12px">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
@@ -35,22 +33,51 @@
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
             </svg>
               +38 096 111 11 11</a></li>
-        </ul>
+            </ul>
+            <ul class="header-social">
+              <li class="header-social__item">
+                <a class="header-social__link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </li>
+              <li class="header-social__item">
+                <a class="header-social__link" href="" target="_blank" rel="noopener noreferrer">Twitter</a>
+              </li>
+              <li class="header-social__item">
+                <a class="header-social__link" href="" target="_blank" rel="noopener noreferrer">Facebook</a>
+              </li>
+              <li class="header-social__item">
+                <a class="header-social__link" href="" target="_blank" rel="noopener noreferrer">Linkedin</a>
+              </li>
+            </ul>
+         </div>
+        </div>
+        <button class="btn-menu" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg width="40" height="40" aria-label="открыть мобильное меню">
+            <use class="btn-menu__icon btn-menu__icon--open" href="./images/symbol-defs.svg#icon-vector5"></use>
+            <use class="btn-menu__icon btn-menu__icon--close" href="./images/symbol-defs.svg#icon-vector"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
 
     <main>
 
     <section class="hero">
+      <div class="hero__conteiner contain">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
             <button data-modal-open class="hero__button" type="button">Заказать услугу</button>
-    </section>
+      </div>
+      </section>
 
-    <!-- <section class="advantages">
-      <div class="container">
-        <h2 class="advantages-heading" >Преимущества компании</h2>
+    <section class="advantages section">
+      <div class="contain">
+        <h2 class="section__title advantages-heading" >Преимущества компании</h2>
         <ul class="list-advantages">
             <li class="list-advantages__item">
+                <div class="list-advantages__icon">
+                  <svg width="70" height="70">
+                    <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                  </svg>
+                </div>
                 <h3 class="list-advantages__title">Внимание к деталям</h3>
                 <p class="list-advantages__description">Идейные соображения, а также
                    начало повседневной работы по
@@ -58,6 +85,11 @@
             </li>
 
             <li class="list-advantages__item">
+              <div class="list-advantages__icon">
+                <svg width="70" height="70">
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
+                </svg>
+              </div>
                 <h3 class="list-advantages__title">Пунктуальность</h3>
                 <p class="list-advantages__description">Задача организации, в особенности
                    же рамки и место обучения кадров
@@ -66,6 +98,11 @@
 
 
             <li class="list-advantages__item">
+              <div class="list-advantages__icon">
+                <svg width="70" height="70">
+                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                </svg>
+              </div>
                 <h3 class="list-advantages__title">Планирование</h3>
                 <p class="list-advantages__description">Равным образом консультация с
                    широким активом в значительной
@@ -73,6 +110,11 @@
             </li>
 
             <li class="list-advantages__item">
+              <div class="list-advantages__icon">
+                <svg width="70" height="70">
+                  <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                </svg>
+              </div>
                 <h3 class="list-advantages__title">Современные технологии</h3>
                 <p class="list-advantages__description">Значимость этих проблем настолько
                    очевидна, что реализация плановых
@@ -81,40 +123,39 @@
 
         </ul>
        </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="product">
-      <div class="container">
-        <h2 class="product__heading">Чем мы занимаемся</h2>
+    <section class="product section">
+      <div class="contain">
+        <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="occupation">
             <li class="occupation__item"> 
-              <div class="occupation__section">
-                  <img class="photo" srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x" src="./images/box1.jpg" alt="Разроботка" width="370" />      
-                  <p class="occupation__name">Десктопные приложения</p>  
-              </div>    
+                  <img srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x" src="./images/box1.jpg" alt="Разроботка" width="370" />      
+                  <p class="occupation__name">Десктопные приложения</p>     
             </li>
             <li class="occupation__item">
-              <div class="occupation__section">
-                  <img class="photo" srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x" src="./images/box2.jpg" alt="Стилизация" width="370" />
+                  <img srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x" src="./images/box2.jpg" alt="Стилизация" width="370" />
                   <p class="occupation__name">Мобильные приложения</p>
-              </div>   
             </li>
             <li class="occupation__item">
-              <div class="occupation__section">
-                  <img class="photo" srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x" src="./images/box3.jpg" alt="Дизан" width="370" />
-                  <p class="occupation__name">Дизайнерские решения</p>
-              </div>    
+                  <img srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x" src="./images/box3.jpg" alt="Дизан" width="370" />
+                  <p class="occupation__name">Дизайнерские решения</p>   
             </li>
         </ul>
        </div>  
-    </section> -->
-<!-- 
-    <section class="team">
-      <div class="container">
-        <h2 class="team__heading">Наша команда</h2>
+    </section> 
+
+    <section class="team section">
+      <div class="contain">
+        <h2 class="section__title">Наша команда</h2>
         <ul class="list-team">
             <li class="list-team__item">
-                <img class="photo" srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" src="./images/img.jpg" alt="Дизанер товара Игорь Демьяненко" width="270" />
+              <picture>
+                <source srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                <source srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                <source srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
+                <img src="./images/img.jpg" alt="Дизанер товара Игорь Демьяненко" width="450" />
+              </picture>
              <div class="list-team__info">
                 <h3 class="list-team__name">Игорь Демьяненко</h3>
                 <p class="list-team__profession" lang="en">Product Designer</p>
@@ -151,8 +192,13 @@
              </div>
             </li>
             <li class="list-team__item">
-                <img class="photo" srcset="./images/img(1).jpg 1x, ./images/img(1)@2x.jpg 2x" src="./images/img(1).jpg" alt="Фронтенд разработчик Ольга Репина" width="270" />
-                <div class="list-team__info">
+              <picture>
+                <source srcset="./images/img(1).jpg 1x, ./images/img(1)@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                <source srcset="./images/img(1).jpg 1x, ./images/img(1)@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                <source srcset="./images/img(1).jpg 1x, ./images/img(1)@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
+                <img src="./images/img(1).jpg" alt="Фронтенд разработчик Ольга Репина" width="450" />
+              </picture>
+              <div class="list-team__info">
                 <h3 class="list-team__name">Ольга Репина</h3>
                 <p class="list-team__profession" lang="en">Frontend Developer</p>
                 <ul class="net"> 
@@ -188,8 +234,13 @@
             </div>
             </li>
             <li class="list-team__item">
-                <img class="photo" srcset="./images/img(2).jpg 1x, ./images/img(2)@2x.jpg 2x" src="./images/img(2).jpg" alt="Маркитолог Никола Тарасов" width="270" />
-                <div class="list-team__info">
+              <picture>
+                <source srcset="./images/img(2).jpg 1x, ./images/img(2)@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                <source srcset="./images/img(2).jpg 1x, ./images/img(2)@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                <source srcset="./images/img(2).jpg 1x, ./images/img(2)@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
+                <img src="./images/img(2).jpg" alt="Маркитолог Никола Тарасов" width="450" />
+              </picture>
+              <div class="list-team__info">
                 <h3 class="list-team__name">Николай Тарасов</h3>
                 <p class="list-team__profession" lang="en">Marketing</p>
                 <ul class="net"> 
@@ -225,8 +276,13 @@
               </div>
             </li>
             <li class="list-team__item">
-                <img class="photo" srcset="./images/img(3).jpg 1x, ./images/img(3)@2x.jpg 2x" src="./images/img(3).jpg" alt="Дизанер интерфеса Михаил Ермаков" width="270" />
-                <div class="list-team__info">
+              <picture>
+                <source srcset="./images/img(3).jpg 1x, ./images/img(3)@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                <source srcset="./images/img(3).jpg 1x, ./images/img(3)@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                <source srcset="./images/img(3).jpg 1x, ./images/img(3)@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
+                <img src="./images/img(3).jpg" alt="Дизанер интерфеса Михаил Ермаков" width="450" />
+              </picture>
+              <div class="list-team__info">
                 <h3 class="list-team__name">Михаил Ермаков</h3>
                 <p class="list-team__profession" lang="en">UI Designer</p>
                 <ul class="net"> 
@@ -263,13 +319,13 @@
             </li>
         </ul>
       </div> 
-    </section> -->
+    </section>
 
-    <!-- <section class="client">
-      <div class="container">
-         <h2 class="client__heading">Постоянные клиенты</h2>
+    <section class="client section">
+      <div class="contain">
+         <h2 class="section__title">Постоянные клиенты</h2>
          <ul class="partners">
-           <li class="partners__item">
+           <li class="partners__item grid-item">
              <a class="partners__link" href="">
                <svg class="partners__icon"  width="41px" height="46.7px">
                   <use href="./images/symbol-defs.svg#icon-group"></use>
@@ -313,82 +369,89 @@
            </li>
          </ul>
       </div>
-    </section> -->
+    </section>
 
     </main>
 
-    <!-- <footer class="basement">
-      <div class="container footer-container">
-        <div class="address-nav">
-             <a href="./index.html" class="logo logo--footer" lang="en">
-                <span class="logo__text">Web</span><span class="logo__text-footer">Studio</span>
+    <footer class="basement">
+      <div class="footer-container contain">
+        <div class="footer-block">
+             <a href="./index.html" class="logo--footer logo" lang="en">
+                Web<span class="logo__text--dark-bg">Studio</span>
              </a>
-        <address> 
-           <p class="address-nav__coordinates">Киев, пр-т Леси Украинки, 26 </p> 
-           <ul class="contact-footer">
-              <li class="contact-footer__item"><a class="contact-footer__link" href="mailto:info@example.com">info@example.com</a></li>
-              <li><a class="contact-footer__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-           </ul>
-         </address>  
+             <address> 
+               <lu class="contact-footer">
+                 <li class="contact-footer__item contact-footer__item--dark-bg">
+                   <a class="contact-footer__link" href="https://goo.gl/maps/T63q2jLgFadgZY8i8" target="blank" rel="noopener noreferrer">Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                 <li class="contact-footer__item">
+                   <a class="contact-footer__link" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="contact-footer__item">
+                   <a class="contact-footer__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+               </lu>
+             </address>  
         </div>
 
-        <div>
+        <div class="footer-block">
            <p class="join">присоединяйтесь</p>
            <ul class="net"> 
             <li class="net__item">
               <a class="net__link net__link--foot" href="">
-                <svg class="net__icon-foot" width="20px" height="20px">
+                <svg class="net__icon net__icon--foot" width="20px" height="20px">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
              </li>
               <li class="net__item">
                <a class="net__link net__link--foot" href="">
-                 <svg class="net__icon-foot" width="20px" height="20px">
+                 <svg class="net__icon net__icon--foot" width="20px" height="20px">
                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
                  </svg>
                </a>
              </li>
                <li class="net__item">
                <a class="net__link net__link--foot" href="">
-                  <svg class="net__icon-foot" width="20px" height="20px">
+                  <svg class="net__icon net__icon--foot" width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                </a>
              </li>
                <li class="net__item">
                <a class="net__link net__link--foot" href="">
-                  <svg class="net__icon-foot" width="20px" height="20px">
+                  <svg class="net__icon net__icon--foot" width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                </a>
              </li> 
            </ul>
         </div>
-
-        <form class="form-footer">
-             <label class="label-footer">Подпишитесь на рассылку</label>
-             <div class="wrap-footer">
-              <input class="wrap-footer__input" type="email" name="mail" id="mail" placeholder="E-mail" />
-              <button class="wrap-footer__button" type="submit">
-                Подписаться
-                <svg class="wrap-footer__icon" width="24px" height="24px">
-                  <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
-              </button>
-             </div>
-        </form>
+        <div class="footer-block">
+          <form class="form-footer">
+            <label class="join">Подпишитесь на рассылку</label>
+            <div class="wrap-footer">
+             <input class="wrap-footer__input" type="email" name="mail" id="mail" placeholder="E-mail" />
+             <button class="wrap-footer__button" type="submit">
+               Подписаться
+               <svg class="wrap-footer__icon" width="24px" height="24px">
+                 <use href="./images/symbol-defs.svg#icon-send"></use>
+               </svg>
+             </button>
+            </div>
+          </form>
+        </div>
       </div> 
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="madal-button" data-modal-close>
+        <button class="madal-button form__btn-close" data-modal-close>
           <svg class="madal-button__icon" width="11px" height="11px">
             <use href="./images/symbol-defs.svg#icon-vector"></use>
           </svg>
         </button>
-        <form class="form">
+        <form class="form js-speaker-form">
           <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
             <label class="form__label" for="name">Имя</label>
             <div class="fond__field">
@@ -411,8 +474,10 @@
               <use href="./images/symbol-defs.svg#icon-vector4"></use>
             </svg>
           </div>
+          <div class="form__textarea">
             <label class="form__label" for="comment">Комментарий</label>
             <textarea class="form__comment"  name="comment" id="comment" placeholder="Введите текст"></textarea>
+          </div>
           <div class="checkbox">
             <label class="checkbox__label" for="consent">
                <input class="checkbox__input"  type="checkbox" name="consent" id="consent" />
@@ -432,14 +497,17 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script>
+      ;(() => {
+        document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+          e.preventDefault()
 
-    <script
-       defer
-       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-       crossorigin="anonymous"
-  ></script>
-  <script defer src="js/mobile-menu.js"></script>
+          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`))
+        })
+      })()
+    </script>
+   
 
 </body>
 </html>

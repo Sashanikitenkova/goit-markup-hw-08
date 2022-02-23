@@ -1,6 +1,9 @@
 .net {
-    display: flex;
-    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-flex;
   }
   
   .net__item {
@@ -19,10 +22,15 @@
   
     justify-content: center;
     align-items: center;
+    text-decoration: none;
   
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--foot {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
 
     &:hover,
     &:focus {
@@ -31,11 +39,17 @@
   } 
   
   .net__icon {
+    width: 20px;
+    height: 20px;
     fill: $icon-fill;
   
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--foot {
+      fill: $white-color;
+    }
 
     .net__link:hover &,
     .net__link:focus & {

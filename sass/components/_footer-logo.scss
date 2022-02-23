@@ -1,22 +1,117 @@
-.logo__text-footer {
-    color: $white-color;
-   }
-  
-  .logo--footer {
-    display: inline-block;
-    margin-right: 0;
-    margin-bottom: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
+.header-social {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+
+  @media screen and (max-width: 339.9px) {
+    font-size: 10px;
   }
 
-  .join {
-    color: $white-color;
-    font-weight: 700;
+  @media screen and (min-width: 340px) and (max-width: 379.9px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 380px) and (max-width: 439.9px) {
     font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-
-    margin-top: 0;
-    margin-bottom: 20px;
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+
+.header-social__item {
+    position: relative;
+    margin: 10px;
+
+    &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        right: -10px;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(33, 33, 33, 0.2);
+      }
+}
+
+.header-social__link {
+    text-decoration: none;
+    color: inherit;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &.current {
+    color: $accent-color;
+     }
+}
+
+
+.btn-menu {
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+
+  border: none;
+  background-color: inherit;
+  z-index: 2;
+
+  &.is-open {
+    position: fixed;
+    top: 10px;
+    right: calc((100vw - 450px) / 2);
+
+    @media screen and (max-width: 479.9px) {
+      right: 15px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.btn-menu__icon {
+    margin: auto;
+    fill: $title-text-color;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .btn-menu:hover &, 
+    .btn-menu:focus & {
+      fill: $accent-color;
+    }
+}
+
+.btn-menu__icon--open {
+    display: block;
+  
+    .btn-menu.is-open & {
+      display: none;
+    }
+}
+
+.btn-menu__icon--close {
+    display: none;
+  
+    .btn-menu.is-open & {
+      display: block;
+    }
+}

@@ -1,49 +1,56 @@
 .team {
     background-color: $button-color;
-
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 
   .list-team {
-    display: flex;
-    
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+      }
 }
    
-   .list-team__item {
-    width: 270px;
-    margin-right: 30px; 
+   .list-team__item { 
     background-color: $white-color;
-
     box-shadow: 0px 1px 3px $box-shadow-one, 0px 1px 1px $box-shadow-seven, 0px 2px 1px  $backdrop-color;
     border-radius: 0px 0px 4px 4px;
 
-    &:last-child {
-      margin-right: 0;
-    }
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px * 2) / 2);
+        margin: 15px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 30px * 4) / 4);
+      }
+   }
+
+   @media screen and (max-width: 767.9px) {
+    .list-team__item:not(:last-child) {
+        margin-bottom: 30px;
+      }
    }
 
   .list-team__info {
-    padding: 30px 32px;
+    padding: 30px 10px;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
   }
 
   .list-team__name {
     color: $title-text-color;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.9;
-
     margin-bottom: 10px;
-    margin-top: 0;
+    font-size: 16px;
+    font-weight: 500;
    }
 
   .list-team__profession {
-    margin-top: 0px;
     margin-bottom: 16px;
   }
