@@ -52,7 +52,7 @@
         </div>
         <button class="btn-menu" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
           <svg width="40" height="40" aria-label="открыть мобильное меню">
-            <use class="btn-menu__icon btn-menu__icon--open" href="./images/symbol-defs.svg#icon-vector5"></use>
+            <use class="btn-menu__icon btn-menu__icon--open" href="./images/symbol-defs.svg#icon-menupx"></use>
             <use class="btn-menu__icon btn-menu__icon--close" href="./images/symbol-defs.svg#icon-vector"></use>
           </svg>
         </button>
@@ -63,7 +63,7 @@
 
     <section class="hero">
       <div class="hero__conteiner contain">
-            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+            <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
             <button data-modal-open class="hero__button" type="button">Заказать услугу</button>
       </div>
       </section>
@@ -379,7 +379,7 @@
              <a href="./index.html" class="logo--footer logo" lang="en">
                 Web<span class="logo__text--dark-bg">Studio</span>
              </a>
-             <address> 
+             <address class="address"> 
                <lu class="contact-footer">
                  <li class="contact-footer__item contact-footer__item--dark-bg">
                    <a class="contact-footer__link" href="https://goo.gl/maps/T63q2jLgFadgZY8i8" target="blank" rel="noopener noreferrer">Киев, пр-т Леси Украинки, 26</a>
@@ -457,41 +457,39 @@
             <div class="fond__field">
               <input class="form__input" type="text" name="name" id="name" autofocus />
               <svg class="form__icon" width="12px" height="12px">
-                <use href="./images/symbol-defs.svg#icon-vector2"></use>
+                <use href="./images/symbol-defs.svg#icon-group1"></use>
               </svg>
             </div>
             <label class="form__label" for="tel">Телефон</label>
             <div class="fond__field">
                <input class="form__input" type="tel" name="tel" id="tel" />
                <svg class="form__icon" width="13px" height="13px">
-                  <use href="./images/symbol-defs.svg#icon-vector3"></use>
+                  <use href="./images/symbol-defs.svg#icon-group1"></use>
                </svg>
             </div>
            <label class="form__label" for="mail">Почта</label>
            <div class="fond__field">
             <input class="form__input" type="email" name="mail" id="mail" />
             <svg class="form__icon" width="15px" height="12px">
-              <use href="./images/symbol-defs.svg#icon-vector4"></use>
+              <use href="./images/symbol-defs.svg#icon-group1"></use>
             </svg>
           </div>
           <div class="form__textarea">
             <label class="form__label" for="comment">Комментарий</label>
             <textarea class="form__comment"  name="comment" id="comment" placeholder="Введите текст"></textarea>
           </div>
-          <div class="checkbox">
-            <label class="checkbox__label" for="consent">
-               <input class="checkbox__input"  type="checkbox" name="consent" id="consent" />
+          <label class="checkbox__label" for="consent">
+               <input class="checkbox__input visually-hidden"  type="checkbox" name="consent" id="consent" />
                <span class="checkbox__frame"> 
-                <svg class="checkbox__icon" width="16px" height="15px">
+                <!-- <svg class="checkbox__icon" width="16px" height="15px">
                   <use href="./images/symbol-defs.svg#icon-vector5"></use>
-                </svg>
+                </svg> -->
                </span>
-               Соглашаюсь с рассылкой и принимаю 
-               <a class="checkbox__link" href="">Условия договора </a>
-            </label>
-          </div>
+               <span>Соглашаюсь с рассылкой и принимаю 
+                <a class="checkbox__link" href="">Условия договора </a></span>
+          </label>
 
-          <button class="form__button" type="submit">Отправить</button>
+          <button class="wrap-footer__button form__button" type="submit">Отправить</button>
         </form>
       </div>
     </div>

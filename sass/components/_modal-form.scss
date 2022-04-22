@@ -7,6 +7,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
+    letter-spacing: 0.03em;
     text-align: center;
     color: $title-text-color;
   
@@ -52,7 +53,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    .form__field:focus-within > &:focus {
+    .fond__field:focus-within > & {
       border: 1px solid $accent-color;
     }
   }
@@ -69,7 +70,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    .form__input:focus-within > & {
+    .fond__field:focus-within > & {
         fill: $accent-color;
       }
   }
