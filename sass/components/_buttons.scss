@@ -1,0 +1,171 @@
+.button-submit {
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 50px;
+
+    border-radius: 4px;
+    border: none;
+    background-color: $accent-color;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $white-color;
+    box-shadow: 0px 4px 4px $box-shadow-six;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $second-accent-color;
+    }
+  }
+
+  .list-key__button {
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+  
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+    background-color: $button-color;
+
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+  
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms, 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+  
+       &--focus {
+        color: $white-color;
+        background-color: $accent-color;
+      }
+      
+       &:hover,
+       &:focus{
+         color: $white-color;
+         background-color: $accent-color;
+         box-shadow: 0px 3px 1px $box-shadow-four, 0px 1px 2px $box-shadow-five, 0px 2px 2px $box-shadow-one;
+      }
+  }
+
+  .madal-button {
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: inherit;
+  }
+
+  .madal-button__icon {
+    display: block;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+
+    transform: scale(1);
+    transition-property: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .madal-button:hover &, 
+    .madal-button:focus & {
+      fill: $accent-color;
+      transform: scale(1.2);
+    }
+  }
+
+  .btn-menu {
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+  
+    border: none;
+    background-color: inherit;
+    z-index: 2;
+  
+    &.is-open {
+      position: fixed;
+      top: 10px;
+      right: calc((100vw - 450px) / 2);
+  
+      @media screen and (max-width: 479.9px) {
+        right: 15px;
+      }
+    }
+  
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  
+  .btn-menu__icon {
+      margin: auto;
+      fill: $title-text-color;
+  
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  }
+  
+  .btn-menu__icon--open {
+      display: block;
+
+      .btn-menu:hover &, 
+      .btn-menu:focus & {
+        fill: $accent-color;
+      }
+    
+      .btn-menu.is-open & {
+        display: none;
+      }
+  }
+  
+  .btn-menu__icon--close {
+      display: none;
+      fill: $title-text-color;
+    
+      .btn-menu.is-open & {
+        display: block;
+
+      }
+
+      .btn-menu:hover &, 
+      .btn-menu:focus & {
+        fill: $accent-color;
+     }
+  }
+
+  .form__button {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+  .form__btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+ 
+
+

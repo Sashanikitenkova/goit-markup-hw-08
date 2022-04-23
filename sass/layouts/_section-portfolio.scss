@@ -1,5 +1,4 @@
-
-   .portfolio {
+.portfolio {
     list-style: none;
     padding-left: 0;
     margin-top: 0;
@@ -128,38 +127,3 @@
     line-height: 2;
     letter-spacing: 0.06em;
   }
-
-
-//   .portfolio__text-card {
-//     display: flex;
-//     position: absolute;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 63px 24px;
-//     left: 0;
-//     bottom: 0;
-//     width: 370px;
-//     height: 294px;
-//     background-color: $portfolio-card;
-//     transform: translateY(100%);
-
-//     opacity: 0;
-
-//     transition-property: transform, opacity;
-//     transition-duration: 250ms, 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-
-//     .portfolio__link:hover &,
-//     .portfolio__link:focus & {
-//         opacity: 1;
-//         transform: translateY(0);
-//   }
-// }
-
-
-//    .portfolio__type {
-//     color: $primary-text-color;
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 1.88;
-//   }

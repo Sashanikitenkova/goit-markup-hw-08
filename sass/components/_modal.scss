@@ -72,38 +72,3 @@
     }
 }
 
-  .madal-button {
-    padding: 0;
-    outline: none;
-    cursor: pointer;
-
-    width: 30px;
-    height: 30px;
-
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    background-color: inherit;
-  }
-
-  .form__btn-close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-  }
- 
-  .madal-button__icon {
-    display: block;
-    margin: auto;
-    width: 18px;
-    height: 18px;
-
-    transform: scale(1);
-    transition-property: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .madal-button:hover &, 
-    .madal-button:focus & {
-      fill: $accent-color;
-      transform: scale(1.2);
-    }
-  }
-

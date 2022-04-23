@@ -1,16 +1,26 @@
 
-//  .logo {
-//     color: $logo-color;
-//     font-family: raleway, sans-serif;
-//     font-weight: 400;
-//     font-size: 26px;
-//     line-height: 1.19;
-//     text-decoration: none;   
-//     padding-bottom: 25px;
-//     padding-top: 24px;
+.logo {
+    display: inline-block;
+    
+    font-family: raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: $accent-color;
 
-//     &__text {
-//         font-weight: 700;
-//         color: $accent-color;
-//     }
-// }
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+      }
+}
+
+  .logo__text {
+    color: $title-text-color;
+
+    &--dark-bg {
+        color: $white-color; 
+    }
+   }

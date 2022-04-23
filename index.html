@@ -53,7 +53,7 @@
         <button class="btn-menu" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
           <svg width="40" height="40" aria-label="открыть мобильное меню">
             <use class="btn-menu__icon btn-menu__icon--open" href="./images/symbol-defs.svg#icon-menupx"></use>
-            <use class="btn-menu__icon btn-menu__icon--close" href="./images/symbol-defs.svg#icon-vector"></use>
+            <use class="btn-menu__icon btn-menu__icon--close" href="./images/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
       </div>
@@ -64,7 +64,7 @@
     <section class="hero">
       <div class="hero__conteiner contain">
             <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button data-modal-open class="hero__button" type="button">Заказать услугу</button>
+            <button data-modal-open class="button-submit" type="button">Заказать услугу</button>
       </div>
       </section>
 
@@ -152,8 +152,8 @@
             <li class="list-team__item">
               <picture>
                 <source srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
-                <source srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
-                <source srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
+                <source srcset="./images/IDtabl.jpg 1x, ./images/IDtabl2@.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                <source srcset="./images/IDmobile.jpg 1x, ./images/IDmobile2@.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
                 <img src="./images/img.jpg" alt="Дизанер товара Игорь Демьяненко" width="450" />
               </picture>
              <div class="list-team__info">
@@ -194,8 +194,8 @@
             <li class="list-team__item">
               <picture>
                 <source srcset="./images/img(1).jpg 1x, ./images/img(1)@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
-                <source srcset="./images/img(1).jpg 1x, ./images/img(1)@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
-                <source srcset="./images/img(1).jpg 1x, ./images/img(1)@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
+                <source srcset="./images/ORtabl.jpg 1x, ./images/ORtabl2@.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                <source srcset="./images/ORmobile.jpg 1x, ./images/ORmobile2@.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
                 <img src="./images/img(1).jpg" alt="Фронтенд разработчик Ольга Репина" width="450" />
               </picture>
               <div class="list-team__info">
@@ -236,8 +236,8 @@
             <li class="list-team__item">
               <picture>
                 <source srcset="./images/img(2).jpg 1x, ./images/img(2)@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
-                <source srcset="./images/img(2).jpg 1x, ./images/img(2)@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
-                <source srcset="./images/img(2).jpg 1x, ./images/img(2)@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
+                <source srcset="./images/NTtabl.jpg 1x, ./images/NTtabl2@.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                <source srcset="./images/NTmobile.jpg 1x, ./images/NTmobile2@.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
                 <img src="./images/img(2).jpg" alt="Маркитолог Никола Тарасов" width="450" />
               </picture>
               <div class="list-team__info">
@@ -278,8 +278,8 @@
             <li class="list-team__item">
               <picture>
                 <source srcset="./images/img(3).jpg 1x, ./images/img(3)@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
-                <source srcset="./images/img(3).jpg 1x, ./images/img(3)@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
-                <source srcset="./images/img(3).jpg 1x, ./images/img(3)@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
+                <source srcset="./images/MEtabl.jpg 1x, ./images/MEtabl2@.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                <source srcset="./images/MEmobile.jpg 1x, ./images/MEmobile2@.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
                 <img src="./images/img(3).jpg" alt="Дизанер интерфеса Михаил Ермаков" width="450" />
               </picture>
               <div class="list-team__info">
@@ -432,10 +432,10 @@
             <label class="join">Подпишитесь на рассылку</label>
             <div class="wrap-footer">
              <input class="wrap-footer__input" type="email" name="mail" id="mail" placeholder="E-mail" />
-             <button class="wrap-footer__button" type="submit">
+             <button class="button-submit" type="submit">
                Подписаться
                <svg class="wrap-footer__icon" width="24px" height="24px">
-                 <use href="./images/symbol-defs.svg#icon-send"></use>
+                 <use href="./images/symbol-defs.svg#icon-icon-send"></use>
                </svg>
              </button>
             </div>
@@ -448,7 +448,7 @@
       <div class="modal">
         <button class="madal-button form__btn-close" data-modal-close>
           <svg class="madal-button__icon" width="11px" height="11px">
-            <use href="./images/symbol-defs.svg#icon-vector"></use>
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
         <form class="form js-speaker-form">
@@ -457,21 +457,21 @@
             <div class="fond__field">
               <input class="form__input" type="text" name="name" id="name" autofocus />
               <svg class="form__icon" width="12px" height="12px">
-                <use href="./images/symbol-defs.svg#icon-group1"></use>
+                <use href="./images/symbol-defs.svg#icon-Vector"></use>
               </svg>
             </div>
             <label class="form__label" for="tel">Телефон</label>
             <div class="fond__field">
                <input class="form__input" type="tel" name="tel" id="tel" />
                <svg class="form__icon" width="13px" height="13px">
-                  <use href="./images/symbol-defs.svg#icon-group1"></use>
+                  <use href="./images/symbol-defs.svg#icon-Vector1"></use>
                </svg>
             </div>
            <label class="form__label" for="mail">Почта</label>
            <div class="fond__field">
             <input class="form__input" type="email" name="mail" id="mail" />
             <svg class="form__icon" width="15px" height="12px">
-              <use href="./images/symbol-defs.svg#icon-group1"></use>
+              <use href="./images/symbol-defs.svg#icon-Vector2"></use>
             </svg>
           </div>
           <div class="form__textarea">
@@ -489,7 +489,7 @@
                 <a class="checkbox__link" href="">Условия договора </a></span>
           </label>
 
-          <button class="wrap-footer__button form__button" type="submit">Отправить</button>
+          <button class="button-submit form__button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
